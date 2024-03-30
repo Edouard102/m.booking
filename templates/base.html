@@ -17,19 +17,19 @@
     <title> Restaurant mae - {% block title %}{% endblock %}</title>
 </head>
 <body>
-   
     {% include 'includes/header.html' %}
 
+    <main>
         
-      
+        {% block content %}
 
-        <h1>Hello I am Bonkers!</h1>
+        <h1>Hello world</h1>
        
-     
+        {% endblock %}
 
-   
+    </main>
 
-   
+    {% include 'includes/footer.html' %}
 
 </body>
 </html>
